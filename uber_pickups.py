@@ -9,7 +9,8 @@ except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context       # The above code is used to prevent ssl certificate verification error.
-st.title('Uber pickups in NYC')
+    
+st.title('Uber pickups in NYC')                                # Mentioning title of the Web application
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/streamlit-demo-data/uber-raw-data-sep14.csv.gz') # Using data stored in amazon aws cloud.
