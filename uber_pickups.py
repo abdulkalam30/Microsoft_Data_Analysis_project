@@ -41,3 +41,6 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
+
+#/Users/abju/Documents/MS_project/uber_pickups.py  - This was the location where my file stored in my computer
+#Run the follwing command to see the webb application - streamlit run /Users/abju/Documents/MS_project/uber_pickups.py
