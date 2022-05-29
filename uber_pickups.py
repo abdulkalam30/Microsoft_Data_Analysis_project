@@ -41,5 +41,5 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)                                          # Providing the pickup location of the vehicles on the map on a particular hour chosen in the slider. 
 
-#/Users/abju/Documents/MS_project/uber_pickups.py  - This is the location where my file stored in my computer
-#The follwing command is used to run the web application - streamlit run /Users/abju/Documents/MS_project/uber_pickups.py
+#/Users/abju/Python_practice/Assignments/uber_pickups.py  - This is the location where my file stored in my computer
+#The follwing command is used to run the web application - streamlit run /Users/abju/Python_practice/Assignments/uber_pickups.py
