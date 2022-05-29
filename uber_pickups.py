@@ -32,7 +32,7 @@ if st.checkbox('Show raw data'):
 
 st.subheader('Number of pickups by hour')
 hist_values = np.histogram(data[DATE_COLUMN].dt.hour, bins=24, range=(0,24))[0]
-st.bar_chart(hist_values)                                      # Creating a histogram of Number of pickups by hour.
+st.bar_chart(hist_values)                                      # Creating a histogram of Number of pickups by hour in a day (24 hour format).
 
 
 hour_to_filter = st.slider('hour', 0, 23, 17)                  # Providing a slider option to choose particular hour in the range 0-23.
